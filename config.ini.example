@@ -1,0 +1,26 @@
+[server]
+host = 0.0.0.0
+port = 8015
+
+[auth]
+api_key = your_api_key_here
+
+[ollama]
+base_url = http://localhost:11434
+model = your_model_name
+num_ctx = 16384
+timeout_seconds = 600
+temperature = 0.3
+num_predict = 12288
+repeat_penalty = 1.1
+repeat_last_n = 128
+
+[ocr]
+languages = uk,en
+use_gpu = false
+
+[processing]
+max_upload_size_mb = 50
+max_total_tokens_estimate = 60000
+extraction_prompt_file = prompts/extraction_prompt.txt
+report_prompt_file = prompts/report_prompt.txt
