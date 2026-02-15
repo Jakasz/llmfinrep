@@ -149,4 +149,4 @@ The service starts at `http://localhost:8015` by default.
 
 ## License
 
-This project is part of a personal portfolio. All rights reserved.
+This project is proprietary software developed for internal enterprise use. Source code is shared publicly for portfolio demonstration purposes only. See [LICENSE](LICENSE) for details.
