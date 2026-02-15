@@ -4,7 +4,7 @@
 
 ## Overview
 
-A FastAPI microservice that accepts financial documents (PDF, images, Excel, Word), extracts structured data using a local LLM, computes **28 financial indicators** with deterministic Python logic, and generates professional HTML reports — all without sending data to external APIs.
+A FastAPI microservice that accepts financial documents (PDF, images, Excel, Word), extracts structured data using a local LLM, computes **financial indicators** with deterministic Python logic, and generates professional HTML reports — all without sending data to external APIs.
 
 ### Why Hybrid Architecture?
 
@@ -22,7 +22,7 @@ This approach combines the flexibility of LLMs with 100% calculation accuracy.
 
 ## Financial Analysis
 
-The service computes **28 financial indicators** across **6 analysis blocks**, based on Ukrainian financial statement forms (Balance Sheet — Form №1, Income Statement — Form №2):
+The service computes **financial indicators** across **6 analysis blocks**, based on Ukrainian financial statement forms (Balance Sheet — Form №1, Income Statement — Form №2):
 
 | Block | Indicators | Examples |
 |-------|-----------|----------|
@@ -100,7 +100,7 @@ Upload up to 10 financial documents for analysis. Requires Bearer token authenti
 │   │   ├── docx_extractor.py   # Word extraction
 │   │   ├── llm_client.py       # Ollama API client
 │   │   ├── json_extractor.py   # JSON parsing & validation
-│   │   └── financial_calculator.py  # 28 financial ratios (Python)
+│   │   └── financial_calculator.py  # financial ratios (Python)
 │   └── utils/
 │       └── text_utils.py       # Text cleanup & token estimation
 ├── prompts/                    # LLM prompt templates
